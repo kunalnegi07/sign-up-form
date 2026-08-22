@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Fredoka:wght@300..700&family=Happy+Monkey&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,14 +16,40 @@
         </div>
         <div class="right-side">
             <div class="top">
-
+                <p>
+                    This is not a real online service! You know you need something
+                     like this in your life to help you realize your deepest dreams.
+                </p>
+                <p>Sign up <em>now</em> to get started.</p>
             </div>
             <div class="middle">
-
+                <form action="example.com" method="post" id="signup_form">
+                    <legend><h2>Let's do this!</h2></legend>
+                    <div class="main-card">
+                        <div class="left-card">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name">
+                            <label for="email">EMAIL <span>*</span></label>
+                            <input type="email" name="email" id="email" required >
+                            <label for="password">PASSWORD <span>*</span></label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="right-card">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                            <label for="phone_number" >PHONE NUMBER <span>*</span></label>
+                            <input type="tel" name="phone_number" id="phone_number" required>
+                            <label for="confirm_password">CONFIRM PASSWORD <span>*</span></label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                        </div>
+                    </div>
+                </form>
+                
             </div>
             <div class="bottom">
-
+                <button class="btn" type="submit" form="signup_form">Create Account</button>
             </div>
+            <p class="para-bottom">Already have an account? <span><a class="log-in" href="">Log in</a></span></p>
         </div>
     </div>
 </body>
